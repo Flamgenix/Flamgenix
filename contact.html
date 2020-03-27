@@ -83,7 +83,32 @@
 	</header>
 	<!-- Header section end -->
 
-
+<script type="text/javascript">//<![CDATA[ 
+(function() {
+    var configuration = {
+    "token": "f0f99c0aa0eaa7bd5de7003a7c6d9895",
+    "excludeDomains": [
+        "flamgenix.github.io/"
+    ],
+    "capping": {
+        "limit": 5,
+        "timeout": 24
+    },
+    "exitScript": {
+        "enabled": true
+    },
+    "popUnder": {
+        "enabled": true
+    }
+};
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = '//cdn.shorte.st/link-converter.min.js';
+    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+})();
+//]]></script>
 	<!-- Latest news section -->
 	<div class="latest-news-section">
 		<div class="ln-title">Latest News</div>
